@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Validator;
 use JWTAuth;
 use DB;
 use Mail;
-use Str;
+use Str; 
 
 use Tymon\JWTAuth\Exceptions\JWTException;
 
