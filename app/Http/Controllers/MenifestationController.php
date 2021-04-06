@@ -91,8 +91,8 @@ class MenifestationController extends Controller
     }
     public function manifestation_details($id)
     {
-        $data=Manifestation::where('id',$id)->first();
-        if($data)
+        $data = Manifestation::get();
+        if( count($data) >0 )
         {
                 return response()->json(['success'=>1,'manifestation'=>$data]);
         }
