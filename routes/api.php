@@ -35,6 +35,12 @@ Route::group(['middleware' => ['jwt.verify']], function() {
 
     Route::post('manifestation_insert','MenifestationController@manifestation_insert');
     Route::get('manifestation_details/{id}','MenifestationController@manifestation_details');
+
+    Route::post('poster_insert','PosterController@poster_insert');
+    Route::get('show_all_posters','PosterController@show_all_posters');
+    Route::post('poster_delete','PosterController@poster_delete');
+    Route::post('poster_update','PosterController@poster_update');
+    Route::post('poster_details','PosterController@poster_details');
     
 });
 

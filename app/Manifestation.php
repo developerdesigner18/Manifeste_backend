@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Manifestation extends Model
 {
+    protected $table='manifestations';
     public $timestamps=false;
     protected $fillable = [
         'title',

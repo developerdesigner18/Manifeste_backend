@@ -98,7 +98,7 @@ class MenifestationController extends Controller
         }
         else
         {
-                return response()->json(['success'=>0,'message'=>'data not inserted.']); 
+                return response()->json(['success'=>0,'message'=>'data not found.']); 
         }
     }
 }
