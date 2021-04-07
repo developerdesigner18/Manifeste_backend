@@ -89,7 +89,7 @@ class MenifestationController extends Controller
             }
         }
     }
-    public function manifestation_details($id)
+    public function manifestation_details()
     {
         $data = Manifestation::get();
         if( count($data) >0 )
