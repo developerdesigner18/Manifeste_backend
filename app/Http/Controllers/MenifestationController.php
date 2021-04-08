@@ -101,4 +101,16 @@ class MenifestationController extends Controller
                 return response()->json(['success'=>0,'message'=>'data not found.']); 
         }
     }
+    public function single_manifestation($id)
+    {
+        $data = Manifestation::where('id',$id)->first();
+        if($data)
+        {
+                return response()->json(['success'=>1,'manifestation'=>$data]);
+        }
+        else
+        {
+                return response()->json(['success'=>0,'message'=>'data not found.']); 
+        }
+    }
 }
